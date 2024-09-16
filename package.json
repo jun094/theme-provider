@@ -4,7 +4,7 @@
 	"description": "홀리몰리 Theme Provider 생성기",
 	"main": "index.js",
 	"scripts": {
-		"build": "tsup"
+		"build": "rm -rf dist && tsup"
 	},
 	"keywords": [
 		"Theme",
