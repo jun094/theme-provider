@@ -1,17 +1,29 @@
 import ThemeProvider from "../components/ThemeProvider";
 import Button from "./components/Button";
 
+import "./App.css";
+
 function App() {
 	return (
 		<>
 			<ThemeProvider theme="cake">
-				<Button>Button</Button>
+				<section>
+					<Button>Button</Button>
+					<Button color="secondary">Button</Button>
+					<Button color="success">Button</Button>
+					<Button color="warning"> Button</Button>
+				</section>
 			</ThemeProvider>
 
 			<hr />
 
 			<ThemeProvider theme="strawberry">
-				<Button>Button</Button>
+				<section>
+					<Button>Button</Button>
+					<Button color="secondary">Button</Button>
+					<Button color="success">Button</Button>
+					<Button color="warning"> Button</Button>
+				</section>
 			</ThemeProvider>
 
 			<hr />

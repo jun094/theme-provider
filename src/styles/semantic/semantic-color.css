@@ -1,0 +1,12 @@
+.hm-jun[data-hm-jun-theme="cake"] {
+	--primary: var(--blue-500);
+	--secondary: var(--gray-100);
+	--success: var(--green-500);
+	--warning: var(--orange-500);
+}
+.hm-jun[data-hm-jun-theme="strawberry"] {
+	--primary: var(--pink-600);
+	--secondary: var(--gray-100);
+	--success: var(--green-500);
+	--warning: var(--orange-500);
+}

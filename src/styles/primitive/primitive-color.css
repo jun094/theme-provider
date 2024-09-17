@@ -1,8 +1,4 @@
-/* * * * * * * * * * * * * * * * * * * */
-/*                                     */
-/*            Primitive Color          */
-/*                                     */
-/* * * * * * * * * * * * * * * * * * * */
+/** RGB - number */
 .hm-jun {
 	--rgb-white: 255 255 255;
 	--rgb-black: 0 0 0;
@@ -118,6 +114,10 @@
 	--rgb-yellow-700: 235 147 0;
 	--rgb-yellow-800: 224 126 0;
 	--rgb-yellow-900: 214 107 0;
+}
+
+/** RGB */
+.hm-jun {
 	--white: rgb(255, 255, 255);
 	--black: rgb(0, 0, 0);
 	--gray-000: rgb(255, 255, 255);
@@ -280,11 +280,4 @@
 	--yellow-700: rgb(235, 147, 0);
 	--yellow-800: rgb(224, 126, 0);
 	--yellow-900: rgb(214, 107, 0);
-}
-
-.hm-jun.theme-cake {
-	--primary: var(--blue-500);
-}
-.hm-jun.theme-strawberry {
-	--primary: var(--pink-600);
 }

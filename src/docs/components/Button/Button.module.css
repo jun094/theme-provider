@@ -1,8 +1,10 @@
 .container {
-	background-color: var(--primary);
 	color: var(--white);
 	border-radius: 8px;
 	padding: 0 8px;
 	height: 32px;
 	border: none;
+}
+.container[data-hm-jun-color="secondary"] {
+	color: var(--gray-800);
 }
