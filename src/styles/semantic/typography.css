@@ -1,0 +1,30 @@
+.hm-jun[data-hm-jun-theme="cake"] {
+	--font-size-025: calc(0.625rem * var(--scaling-100));
+	--font-size-050: calc(0.75rem * var(--scaling-100));
+	--font-size-075: calc(0.875rem * var(--scaling-100));
+	--font-size-100: calc(1rem * var(--scaling-100));
+	--font-size-200: calc(1.125rem * var(--scaling-100));
+	--font-size-300: calc(1.25rem * var(--scaling-100));
+	--font-size-400: calc(1.5rem * var(--scaling-100));
+	--font-size-500: calc(2rem * var(--scaling-100));
+	--font-size-600: calc(2.375rem * var(--scaling-100));
+	--font-size-700: calc(3rem * var(--scaling-100));
+	--font-size-800: calc(4rem * var(--scaling-100));
+	--font-size-900: calc(5rem * var(--scaling-100));
+	--font-size-1000: calc(7.5rem * var(--scaling-100));
+}
+.hm-jun[data-hm-jun-theme="strawberry"] {
+	--font-size-025: calc(0.625rem * var(--scaling-115));
+	--font-size-050: calc(0.75rem * var(--scaling-115));
+	--font-size-075: calc(0.875rem * var(--scaling-115));
+	--font-size-100: calc(1rem * var(--scaling-115));
+	--font-size-200: calc(1.125rem * var(--scaling-115));
+	--font-size-300: calc(1.25rem * var(--scaling-115));
+	--font-size-400: calc(1.5rem * var(--scaling-115));
+	--font-size-500: calc(2rem * var(--scaling-115));
+	--font-size-600: calc(2.375rem * var(--scaling-115));
+	--font-size-700: calc(3rem * var(--scaling-115));
+	--font-size-800: calc(4rem * var(--scaling-115));
+	--font-size-900: calc(5rem * var(--scaling-115));
+	--font-size-1000: calc(7.5rem * var(--scaling-115));
+}

@@ -1,6 +1,7 @@
 .container {
 	color: var(--white);
 	border-radius: var(--border-radius-200);
+	font-size: var(--font-size-075);
 	padding: 0 8px;
 	height: 32px;
 	border: none;
