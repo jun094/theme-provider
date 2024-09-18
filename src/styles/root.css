@@ -1,2 +1,7 @@
+/** Semantic Token */
 @import "./primitive//primitive-color.css";
+@import "./primitive/size.css";
+
+/** Primitive Token */
 @import "./semantic/semantic-color.css";
+@import "./semantic//border-radius.css";

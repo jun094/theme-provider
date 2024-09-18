@@ -1,0 +1,13 @@
+.hm-jun {
+	--border-radius-factor-none: 0;
+	--border-radius-factor-sm: 0.75;
+	--border-radius-factor-md: 1;
+	--border-radius-factor-lg: 1.5;
+	--border-radius-factor-full: 999;
+}
+
+.hm-jun {
+	--scaling-90: 0.9;
+	--scaling-100: 1;
+	--scaling-110: 1.1;
+}
