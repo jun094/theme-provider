@@ -1,4 +1,5 @@
 import ThemeProvider from "../../../components/ThemeProvider";
+import Alert from "../../../libs/Alert";
 import Button from "../../../libs/Button";
 import Text from "../../../libs/Text";
 import ThemeSection from "../ThemeSection";
@@ -23,6 +24,14 @@ const ThemeContainer = ({ theme }: ThemeContainerProps) => {
 					<Button color="warning"> Button</Button>
 					<Button color="danger"> Button</Button>
 					<Button color="contrast"> Button</Button>
+				</ThemeSection>
+
+				<ThemeSection title="Alert">
+					<Alert color="primary">Alert</Alert>
+					<Alert color="success">Alert</Alert>
+					<Alert color="warning"> Alert</Alert>
+					<Alert color="contrast"> Alert</Alert>
+					<Alert color="hint"> Alert</Alert>
 				</ThemeSection>
 			</div>
 		</ThemeProvider>

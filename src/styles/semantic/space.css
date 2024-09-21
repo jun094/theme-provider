@@ -1,37 +1,55 @@
-.hm-jun[data-hm-jun-theme="cake"] {
-	--space-000: calc(0 * var(--scaling-100));
-	--space-025: calc(0.125rem * var(--scaling-100));
-	--space-050: calc(0.25rem * var(--scaling-100));
-	--space-075: calc(0.375rem * var(--scaling-100));
-	--space-100: calc(0.5rem * var(--scaling-100));
-	--space-150: calc(0.75rem * var(--scaling-100));
-	--space-175: calc(0.875rem * var(--scaling-100));
-	--space-200: calc(1rem * var(--scaling-100));
-	--space-225: calc(1.125rem * var(--scaling-100));
-	--space-250: calc(1.25rem * var(--scaling-100));
-	--space-300: calc(1.5rem * var(--scaling-100));
-	--space-400: calc(2rem * var(--scaling-100));
-	--space-500: calc(2.5rem * var(--scaling-100));
-	--space-600: calc(3rem * var(--scaling-100));
-	--space-700: calc(3.5rem * var(--scaling-100));
-	--space-800: calc(4rem * var(--scaling-100));
-	--space-900: calc(4.5rem * var(--scaling-100));
+.holymoly-theme[data-holymoly-scaling="90"] {
+	--space-000: calc(0 * var(--scaling-90));
+	--space-025: calc(0.125rem * var(--scaling-90));
+	--space-050: calc(0.25rem * var(--scaling-90));
+	--space-075: calc(0.375rem * var(--scaling-90));
+	--space-100: calc(0.5rem * var(--scaling-90));
+	--space-150: calc(0.75rem * var(--scaling-90));
+	--space-175: calc(0.875rem * var(--scaling-90));
+	--space-200: calc(1rem * var(--scaling-90));
+	--space-225: calc(1.125rem * var(--scaling-90));
+	--space-250: calc(1.25rem * var(--scaling-90));
+	--space-300: calc(1.5rem * var(--scaling-90));
+	--space-400: calc(2rem * var(--scaling-90));
+	--space-500: calc(2.5rem * var(--scaling-90));
+	--space-600: calc(3rem * var(--scaling-90));
+	--space-700: calc(3.5rem * var(--scaling-90));
+	--space-800: calc(4rem * var(--scaling-90));
+	--space-900: calc(4.5rem * var(--scaling-90));
 }
-.hm-jun[data-hm-jun-theme="strawberry"] {
-	--space-025: calc(0.375rem * var(--scaling-115));
-	--space-050: calc(0.5rem * var(--scaling-115));
-	--space-075: calc(0.75rem * var(--scaling-115));
-	--space-100: calc(0.875rem * var(--scaling-115));
-	--space-150: calc(1rem * var(--scaling-115));
-	--space-175: calc(1.125rem * var(--scaling-115));
-	--space-200: calc(1.25rem * var(--scaling-115));
-	--space-225: calc(1.5rem * var(--scaling-115));
-	--space-250: calc(2rem * var(--scaling-115));
-	--space-300: calc(2.5rem * var(--scaling-115));
-	--space-400: calc(3rem * var(--scaling-115));
-	--space-500: calc(3.5rem * var(--scaling-115));
-	--space-600: calc(4rem * var(--scaling-115));
-	--space-700: calc(4.5rem * var(--scaling-115));
-	--space-800: calc(5rem * var(--scaling-115));
-	--space-900: calc(6rem * var(--scaling-115));
+.holymoly-theme[data-holymoly-scaling="100"] {
+	--space-025: calc(0.375rem * var(--scaling-100));
+	--space-050: calc(0.5rem * var(--scaling-100));
+	--space-075: calc(0.75rem * var(--scaling-100));
+	--space-100: calc(0.875rem * var(--scaling-100));
+	--space-150: calc(1rem * var(--scaling-100));
+	--space-175: calc(1.125rem * var(--scaling-100));
+	--space-200: calc(1.25rem * var(--scaling-100));
+	--space-225: calc(1.5rem * var(--scaling-100));
+	--space-250: calc(2rem * var(--scaling-100));
+	--space-300: calc(2.5rem * var(--scaling-100));
+	--space-400: calc(3rem * var(--scaling-100));
+	--space-500: calc(3.5rem * var(--scaling-100));
+	--space-600: calc(4rem * var(--scaling-100));
+	--space-700: calc(4.5rem * var(--scaling-100));
+	--space-800: calc(5rem * var(--scaling-100));
+	--space-900: calc(6rem * var(--scaling-100));
+}
+.holymoly-theme[data-holymoly-scaling="110"] {
+	--space-025: calc(0.375rem * var(--scaling-110));
+	--space-050: calc(0.5rem * var(--scaling-110));
+	--space-075: calc(0.75rem * var(--scaling-110));
+	--space-100: calc(0.875rem * var(--scaling-110));
+	--space-150: calc(1rem * var(--scaling-110));
+	--space-175: calc(1.125rem * var(--scaling-110));
+	--space-200: calc(1.25rem * var(--scaling-110));
+	--space-225: calc(1.5rem * var(--scaling-110));
+	--space-250: calc(2rem * var(--scaling-110));
+	--space-300: calc(2.5rem * var(--scaling-110));
+	--space-400: calc(3rem * var(--scaling-110));
+	--space-500: calc(3.5rem * var(--scaling-110));
+	--space-600: calc(4rem * var(--scaling-110));
+	--space-700: calc(4.5rem * var(--scaling-110));
+	--space-800: calc(5rem * var(--scaling-110));
+	--space-900: calc(6rem * var(--scaling-110));
 }

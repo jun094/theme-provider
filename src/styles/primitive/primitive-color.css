@@ -1,5 +1,5 @@
 /** RGB - number */
-.hm-jun {
+.holymoly-theme {
 	--rgb-white: 255 255 255;
 	--rgb-black: 0 0 0;
 	--rgb-gray-000: 255 255 255;
@@ -117,7 +117,7 @@
 }
 
 /** RGB */
-.hm-jun {
+.holymoly-theme {
 	--white: rgb(255, 255, 255);
 	--black: rgb(0, 0, 0);
 	--gray-000: rgb(255, 255, 255);

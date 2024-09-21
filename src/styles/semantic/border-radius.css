@@ -1,9 +1,29 @@
-.hm-jun[data-hm-jun-theme="cake"] {
+.holymoly-theme[data-holymoly-border-radius="none"] {
+	--border-radius-100: calc(4px * var(--border-radius-factor-none));
+	--border-radius-200: calc(8px * var(--border-radius-factor-none));
+	--border-radius-300: calc(16px * var(--border-radius-factor-none));
+}
+.holymoly-theme[data-holymoly-border-radius="sm"] {
+	--border-radius-100: calc(4px * var(--border-radius-factor-sm));
+	--border-radius-200: calc(8px * var(--border-radius-factor-sm));
+	--border-radius-300: calc(16px * var(--border-radius-factor-sm));
+}
+.holymoly-theme[data-holymoly-border-radius="md"] {
 	--border-radius-100: calc(4px * var(--border-radius-factor-md));
 	--border-radius-200: calc(8px * var(--border-radius-factor-md));
 	--border-radius-300: calc(16px * var(--border-radius-factor-md));
 }
-.hm-jun[data-hm-jun-theme="strawberry"] {
+.holymoly-theme[data-holymoly-border-radius="lg"] {
+	--border-radius-100: calc(4px * var(--border-radius-factor-lg));
+	--border-radius-200: calc(8px * var(--border-radius-factor-lg));
+	--border-radius-300: calc(16px * var(--border-radius-factor-lg));
+}
+.holymoly-theme[data-holymoly-border-radius="xl"] {
+	--border-radius-100: calc(4px * var(--border-radius-factor-xl));
+	--border-radius-200: calc(8px * var(--border-radius-factor-xl));
+	--border-radius-300: calc(16px * var(--border-radius-factor-xl));
+}
+.holymoly-theme[data-holymoly-border-radius="full"] {
 	--border-radius-100: calc(4px * var(--border-radius-factor-full));
 	--border-radius-200: calc(8px * var(--border-radius-factor-full));
 	--border-radius-300: calc(16px * var(--border-radius-factor-full));

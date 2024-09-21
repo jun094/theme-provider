@@ -1,3 +1,7 @@
+.text {
+	color: inherit;
+}
+
 /** display */
 .display1 {
 	font-size: var(--font-size-1000);

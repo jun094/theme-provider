@@ -1,7 +1,14 @@
 import { ReactNode } from "react";
-import { THEMES } from "../../constants/theme";
 
-export type ThemeProviderProps = {
-	theme?: (typeof THEMES)[number];
+export type ThemeName = "cake" | "strawberry";
+
+export type ThemeOptions = {
+	primary?: "blue-500" | "pink-400";
+	borderRadius?: "none" | "sm" | "md" | "lg" | "xl" | "full";
+	scaling?: "90" | "100" | "110";
+};
+
+export type ThemeProviderProps = ThemeOptions & {
+	theme?: ThemeName;
 	children: ReactNode;
 };

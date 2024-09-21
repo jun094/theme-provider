@@ -1,14 +1,11 @@
-.hm-jun[data-hm-jun-theme="cake"] {
+.holymoly-theme[data-holymoly-primary="blue-500"] {
 	--primary: var(--blue-500);
-	--secondary: var(--gray-100);
-	--success: var(--green-500);
-	--warning: var(--orange-500);
-	--danger: var(--red-500);
-	--contrast: var(--gray-800);
-	--hint: var(--gray-600);
 }
-.hm-jun[data-hm-jun-theme="strawberry"] {
+.holymoly-theme[data-holymoly-primary="pink-400"] {
 	--primary: var(--pink-400);
+}
+
+.holymoly-theme {
 	--secondary: var(--gray-100);
 	--success: var(--green-500);
 	--warning: var(--orange-500);

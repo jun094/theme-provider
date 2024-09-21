@@ -1,10 +1,16 @@
 import { useEffect, useRef } from "react";
 
-import "../../styles/root.css";
-import { THEMES } from "../../constants/theme";
 import { ThemeProviderProps } from "./ThemeProvider.types";
+import { THEME_INFO } from "./ThemeProvider.constants";
+import "../../styles/root.css";
 
-const ThemeProvider = ({ theme = "cake", children }: ThemeProviderProps) => {
+const ThemeProvider = ({
+	theme = "cake",
+	primary,
+	borderRadius,
+	scaling,
+	children,
+}: ThemeProviderProps) => {
 	const themeContainerRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
@@ -12,21 +18,33 @@ const ThemeProvider = ({ theme = "cake", children }: ThemeProviderProps) => {
 
 		if (!rootElement) return;
 
-		// 기존 data-theme 제거
-		THEMES.forEach((theme) => rootElement.removeAttribute("data-hm-jun-theme"));
+		const themeAttributes = {
+			"data-holymoly-primary": primary || THEME_INFO[theme].primary,
+			"data-holymoly-border-radius":
+				borderRadius || THEME_INFO[theme].borderRadius,
+			"data-holymoly-scaling": scaling || THEME_INFO[theme].scaling,
+		};
 
-		// 새로운 data-theme 속성 추가
-		if (theme) {
-			rootElement.setAttribute("data-hm-jun-theme", theme);
-		}
+		// 기존 data- 속성들을 지움
+		Object.keys(themeAttributes).forEach((attr) =>
+			rootElement.removeAttribute(attr)
+		);
+
+		// 새로운 data- 속성 추가
+		Object.entries(themeAttributes).forEach(([key, value]) => {
+			if (value) rootElement.setAttribute(key, value);
+		});
 
 		return () => {
-			rootElement.removeAttribute("data-hm-jun-theme");
+			// 컴포넌트가 언마운트될 때 data- 속성 제거
+			Object.keys(themeAttributes).forEach((attr) =>
+				rootElement.removeAttribute(attr)
+			);
 		};
-	}, [theme]);
+	}, [primary, borderRadius, scaling]);
 
 	return (
-		<div ref={themeContainerRef} className="hm-jun">
+		<div ref={themeContainerRef} className="holymoly-theme">
 			{children}
 		</div>
 	);
