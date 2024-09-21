@@ -26,7 +26,7 @@ function Text<E extends HTMLElement = HTMLSpanElement>(
 			{...rest}
 			ref={ref}
 			role={role ?? (Component === "span" ? "text" : undefined)}
-			className={cn(styles.text, styles[typography], className)}
+			className={cn(styles[typography], className)}
 			style={{
 				...style,
 			}}

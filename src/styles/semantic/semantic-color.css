@@ -1,8 +1,24 @@
 .holymoly-theme[data-holymoly-primary="blue-500"] {
 	--primary: var(--blue-500);
+	--primary-transparent-8: var(--blue-500-transparent-8);
+	--primary-transparent-16: var(--blue-500-transparent-16);
+	--primary-transparent-24: var(--blue-500-transparent-24);
+	--primary-transparent-32: var(--blue-500-transparent-32);
+	--primary-hover: var(--blue-600);
+	--primary-active: var(--blue-700);
+	--text-primary: var(--blue-700);
+	--text-primary-alternative: var(--blue-800);
 }
 .holymoly-theme[data-holymoly-primary="pink-400"] {
 	--primary: var(--pink-400);
+	--primary-transparent-8: var(--pink-400-transparent-8);
+	--primary-transparent-16: var(--pink-400-transparent-16);
+	--primary-transparent-24: var(--pink-400-transparent-24);
+	--primary-transparent-32: var(--pink-400-transparent-32);
+	--primary-hover: var(--pink-500);
+	--primary-active: var(--pink-400);
+	--text-primary: var(--pink-600);
+	--text-primary-alternative: var(--pink-700);
 }
 
 .holymoly-theme {
@@ -12,4 +28,77 @@
 	--danger: var(--red-500);
 	--contrast: var(--gray-800);
 	--hint: var(--gray-600);
+}
+
+.holymoly-theme {
+	--secondary-transparent-8: var(--gray-100-transparent-8);
+	--secondary-transparent-16: var(--gray-100-transparent-16);
+	--secondary-transparent-24: var(--gray-100-transparent-24);
+	--secondary-transparent-32: var(--gray-100-transparent-32);
+	--success-transparent-8: var(--green-500-transparent-8);
+	--success-transparent-16: var(--green-500-transparent-16);
+	--success-transparent-24: var(--green-500-transparent-24);
+	--success-transparent-32: var(--green-500-transparent-32);
+	--warning-transparent-8: var(--orange-500-transparent-8);
+	--warning-transparent-16: var(--orange-500-transparent-16);
+	--warning-transparent-24: var(--orange-500-transparent-24);
+	--warning-transparent-32: var(--orange-500-transparent-32);
+	--danger-transparent-8: var(--red-500-transparent-8);
+	--danger-transparent-16: var(--red-500-transparent-16);
+	--danger-transparent-24: var(--red-500-transparent-24);
+	--danger-transparent-32: var(--red-500-transparent-32);
+	--contrast-transparent-8: var(--gray-800-transparent-8);
+	--contrast-transparent-16: var(--gray-800-transparent-16);
+	--contrast-transparent-24: var(--gray-800-transparent-24);
+	--contrast-transparent-32: var(--gray-800-transparent-32);
+	--hint-transparent-8: var(--gray-600-transparent-8);
+	--hint-transparent-16: var(--gray-600-transparent-16);
+	--hint-transparent-24: var(--gray-600-transparent-24);
+	--hint-transparent-32: var(--gray-600-transparent-32);
+}
+
+.holymoly-theme {
+	--secondary-hover: var(--gray-200);
+	--secondary-active: var(--gray-300);
+	--success-hover: var(--green-600);
+	--success-active: var(--green-700);
+	--warning-hover: var(--orange-600);
+	--warning-active: var(--orange-700);
+	--danger-hover: var(--red-600);
+	--danger-active: var(--red-700);
+	--contrast-hover: var(--gray-900);
+	--contrast-active: var(--gray-950);
+	--hint-hover: var(--gray-700);
+	--hint-active: var(--gray-800);
+}
+.holymoly-theme {
+	--text-secondary: var(--gray-300);
+	--text-secondary-alternative: var(--gray-400);
+	--text-success: var(--green-700);
+	--text-success-alternative: var(--green-800);
+	--text-warning: var(--orange-700);
+	--text-warning-alternative: var(--orange-800);
+	--text-danger: var(--red-700);
+	--text-danger-alternative: var(--red-800);
+	--text-contrast: var(--gray-800);
+	--text-contrast-alternative: var(--gray-900);
+	--text-hint: var(--gray-600);
+	--text-hint-alternative: var(--gray-800);
+
+	--text-light: var(--white);
+	--text-normal: var(--gray-900);
+	--text-alternative: var(--gray-700);
+	--text-exception: var(--gray-000);
+}
+
+.holymoly-theme {
+	--background-normal: var(--gray-000);
+	--background-alternative: var(--gray-050);
+	--background-alternative-01: var(--gray-050);
+	--background-alternative-02: var(--gray-000);
+}
+
+.holymoly-theme {
+	--border-color: var(--gray-300);
+	--border-hover: var(--gray-400);
 }
