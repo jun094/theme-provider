@@ -17,9 +17,7 @@ const ThemeSection = ({
 }: ThemeSectionProps) => {
 	return (
 		<section className={styles.section}>
-			<Text typography="heading3" className={styles.title}>
-				{title}
-			</Text>
+			<h2 className={styles.title}>{title}</h2>
 			<div className={cn(styles.contents, column && styles.column)}>
 				{children}
 			</div>

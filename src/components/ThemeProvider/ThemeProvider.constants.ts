@@ -5,10 +5,12 @@ export const THEME_INFO: Record<ThemeName, ThemeOptions> = {
 		primary: "blue-500",
 		borderRadius: "md",
 		scaling: "100",
+		typography: "pretandard",
 	},
 	strawberry: {
 		primary: "pink-400",
 		borderRadius: "xl",
 		scaling: "110",
+		typography: "gothic",
 	},
 };

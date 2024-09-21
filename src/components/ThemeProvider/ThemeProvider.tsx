@@ -8,6 +8,7 @@ const ThemeProvider = ({
 	theme = "cake",
 	primary,
 	borderRadius,
+	typography,
 	scaling,
 	children,
 }: ThemeProviderProps) => {
@@ -22,6 +23,7 @@ const ThemeProvider = ({
 			"data-holymoly-primary": primary || THEME_INFO[theme].primary,
 			"data-holymoly-border-radius":
 				borderRadius || THEME_INFO[theme].borderRadius,
+			"data-holymoly-typography": typography || THEME_INFO[theme].typography,
 			"data-holymoly-scaling": scaling || THEME_INFO[theme].scaling,
 		};
 
@@ -41,7 +43,7 @@ const ThemeProvider = ({
 				rootElement.removeAttribute(attr)
 			);
 		};
-	}, [primary, borderRadius, scaling]);
+	}, [primary, typography, borderRadius, scaling]);
 
 	return (
 		<div ref={themeContainerRef} className="holymoly-theme">

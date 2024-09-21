@@ -14,9 +14,7 @@ const ThemeContainer = ({ theme }: ThemeContainerProps) => {
 	return (
 		<ThemeProvider theme={theme}>
 			<div className={styles.container}>
-				<Text typography="heading1" className={styles.title}>
-					테마: {theme}
-				</Text>
+				<h1 className={styles.title}>테마: {theme}</h1>
 				<ThemeSection title="Button">
 					<Button color="primary">Button</Button>
 					<Button color="secondary">Button</Button>
@@ -27,22 +25,22 @@ const ThemeContainer = ({ theme }: ThemeContainerProps) => {
 				</ThemeSection>
 
 				<ThemeSection title="Alert" column>
-					<Alert color="primary">Alert</Alert>
-					<Alert color="success">Alert</Alert>
-					<Alert color="warning"> Alert</Alert>
-					<Alert color="contrast"> Alert</Alert>
-					<Alert color="hint"> Alert</Alert>
+					<Alert color="primary">경고문입니다.</Alert>
+					<Alert color="success">경고문입니다.</Alert>
+					<Alert color="warning"> 경고문입니다.</Alert>
+					<Alert color="contrast"> 경고문입니다.</Alert>
+					<Alert color="hint"> 경고문입니다.</Alert>
 				</ThemeSection>
 
 				<ThemeSection title="Text" column>
-					<Text typography="heading1">Hi! holymoly-theme is awesome</Text>
-					<Text typography="heading2">Hi! holymoly-theme is awesome</Text>
-					<Text typography="heading3">Hi! holymoly-theme is awesome</Text>
-					<Text typography="heading4">Hi! holymoly-theme is awesome</Text>
-					<Text typography="heading5">Hi! holymoly-theme is awesome</Text>
-					<Text typography="heading6">Hi! holymoly-theme is awesome</Text>
-					<Text typography="subtitle1">Hi! holymoly-theme is awesome</Text>
-					<Text typography="subtitle2">Hi! holymoly-theme is awesome</Text>
+					<Text typography="heading1">heading1</Text>
+					<Text typography="heading2">heading2</Text>
+					<Text typography="heading3">heading3</Text>
+					<Text typography="heading4">heading4</Text>
+					<Text typography="heading5">heading5</Text>
+					<Text typography="heading6">heading6</Text>
+					<Text typography="subtitle1">subtitle1</Text>
+					<Text typography="subtitle2">subtitle2</Text>
 				</ThemeSection>
 			</div>
 		</ThemeProvider>

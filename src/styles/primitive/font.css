@@ -1,0 +1,56 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+
+@font-face {
+	font-family: "KoddiUDOnGothic";
+	src: url("https://statics.goorm.io/gds/fonts/koddi/KoddiUDOnGothic-ExtraBold.eot");
+	src: url("https://statics.goorm.io/gds/fonts/koddi/KoddiUDOnGothic-ExtraBold.eot?#iefix")
+			format("embedded-opentype"),
+		url("https://statics.goorm.io/gds/fonts/koddi/KoddiUDOnGothic-ExtraBold.woff2")
+			format("woff2"),
+		url("https://statics.goorm.io/gds/fonts/koddi/KoddiUDOnGothic-ExtraBold.woff")
+			format("woff"),
+		url("https://statics.goorm.io/gds/fonts/koddi/KoddiUDOnGothic-ExtraBold.ttf")
+			format("truetype");
+	font-weight: 800;
+}
+@font-face {
+	font-family: "KoddiUDOnGothic";
+	src: url("https://statics.goorm.io/gds/fonts/koddi/KoddiUDOnGothic-ExtraBold.eot");
+	src: url("https://statics.goorm.io/gds/fonts/koddi/KoddiUDOnGothic-ExtraBold.eot?#iefix")
+			format("embedded-opentype"),
+		url("https://statics.goorm.io/gds/fonts/koddi/KoddiUDOnGothic-ExtraBold.woff2")
+			format("woff2"),
+		url("https://statics.goorm.io/gds/fonts/koddi/KoddiUDOnGothic-ExtraBold.woff")
+			format("woff"),
+		url("https://statics.goorm.io/gds/fonts/koddi/KoddiUDOnGothic-ExtraBold.ttf")
+			format("truetype");
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "KoddiUDOnGothic";
+	src: url("https://statics.goorm.io/gds/fonts/koddi/KoddiUDOnGothic-Bold.eot");
+	src: url("https://statics.goorm.io/gds/fonts/koddi/KoddiUDOnGothic-Bold.eot?#iefix")
+			format("embedded-opentype"),
+		url("https://statics.goorm.io/gds/fonts/koddi/KoddiUDOnGothic-Bold.woff2")
+			format("woff2"),
+		url("https://statics.goorm.io/gds/fonts/koddi/KoddiUDOnGothic-Bold.woff")
+			format("woff"),
+		url("https://statics.goorm.io/gds/fonts/koddi/KoddiUDOnGothic-Bold.ttf")
+			format("truetype");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "KoddiUDOnGothic";
+	src: url("https://statics.goorm.io/gds/fonts/koddi/KoddiUDOnGothic-Regular.eot");
+	src: url("https://statics.goorm.io/gds/fonts/koddi/KoddiUDOnGothic-Regular.eot?#iefix")
+			format("embedded-opentype"),
+		url("https://statics.goorm.io/gds/fonts/koddi/KoddiUDOnGothic-Regular.woff2")
+			format("woff2"),
+		url("https://statics.goorm.io/gds/fonts/koddi/KoddiUDOnGothic-Regular.woff")
+			format("woff"),
+		url("https://statics.goorm.io/gds/fonts/koddi/KoddiUDOnGothic-Regular.ttf")
+			format("truetype");
+	font-weight: 400;
+}
