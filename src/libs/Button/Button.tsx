@@ -1,8 +1,12 @@
 import React from "react";
 import styles from "./Button.module.css";
+import { SemanticColorTheme } from "../../types/color";
 
 type ButtonProps = {
-	color?: "primary" | "secondary" | "success" | "warning";
+	color?: Extract<
+		SemanticColorTheme,
+		"primary" | "secondary" | "success" | "warning" | "danger" | "contrast"
+	>;
 	children: React.ReactNode;
 };
 
