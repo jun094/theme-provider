@@ -1,10 +1,22 @@
 .section {
 	display: flex;
 	flex-direction: column;
-	gap: 8px;
 }
+
+.section + .section {
+	margin-top: 24px;
+}
+
+.title {
+	border-bottom: 1px solid var(--border-color);
+	margin-bottom: 24px;
+}
+
 .contents {
 	display: flex;
 	gap: 8px;
-	margin-bottom: 16px;
+}
+
+.column {
+	flex-direction: column;
 }

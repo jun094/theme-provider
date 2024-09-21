@@ -3,13 +3,10 @@ import "./App.css";
 
 function App() {
 	return (
-		<div>
+		<main>
 			<ThemeContainer theme="cake" />
-
-			<hr />
-
 			<ThemeContainer theme="strawberry" />
-		</div>
+		</main>
 	);
 }
 

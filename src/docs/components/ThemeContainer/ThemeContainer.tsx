@@ -26,12 +26,23 @@ const ThemeContainer = ({ theme }: ThemeContainerProps) => {
 					<Button color="contrast"> Button</Button>
 				</ThemeSection>
 
-				<ThemeSection title="Alert">
+				<ThemeSection title="Alert" column>
 					<Alert color="primary">Alert</Alert>
 					<Alert color="success">Alert</Alert>
 					<Alert color="warning"> Alert</Alert>
 					<Alert color="contrast"> Alert</Alert>
 					<Alert color="hint"> Alert</Alert>
+				</ThemeSection>
+
+				<ThemeSection title="Text" column>
+					<Text typography="heading1">Hi! holymoly-theme is awesome</Text>
+					<Text typography="heading2">Hi! holymoly-theme is awesome</Text>
+					<Text typography="heading3">Hi! holymoly-theme is awesome</Text>
+					<Text typography="heading4">Hi! holymoly-theme is awesome</Text>
+					<Text typography="heading5">Hi! holymoly-theme is awesome</Text>
+					<Text typography="heading6">Hi! holymoly-theme is awesome</Text>
+					<Text typography="subtitle1">Hi! holymoly-theme is awesome</Text>
+					<Text typography="subtitle2">Hi! holymoly-theme is awesome</Text>
 				</ThemeSection>
 			</div>
 		</ThemeProvider>
