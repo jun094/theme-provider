@@ -101,15 +101,13 @@
 }
 
 /* font-family */
-.holymoly-theme[data-holymoly-typography="pretandard"],
-:root[data-holymoly-typography="pretandard"] {
+.holymoly-theme[data-holymoly-typography="pretandard"] {
 	--font-family-sans: "Pretendard Variable", "-apple-system",
 		"BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial",
 		"Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji",
 		"Segoe UI Symbol", "Noto Color Emoji";
 }
-.holymoly-theme[data-holymoly-typography="gothic"],
-:root[data-holymoly-typography="gothic"] {
+.holymoly-theme[data-holymoly-typography="gothic"] {
 	--font-family-sans: "KoddiUDOnGothic", "-apple-system", "BlinkMacSystemFont",
 		"Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif",
 		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -133,6 +131,27 @@
 	--letter-spacing-b2: -0.1;
 	--letter-spacing-b3: -0.1;
 	--letter-spacing-b4: 0;
+	--letter-spacing-c1: 0;
+	--letter-spacing-c2: 0;
+}
+
+.holymoly-theme[data-holymoly-typography="gothic"] {
+	--letter-spacing-d1: -0.4;
+	--letter-spacing-d2: -0.4;
+	--letter-spacing-d3: -0.4;
+	--letter-spacing-d4: -0.4;
+	--letter-spacing-h1: -0.4;
+	--letter-spacing-h2: -0.4;
+	--letter-spacing-h3: -0.4;
+	--letter-spacing-h4: -0.4;
+	--letter-spacing-h5: -0.3;
+	--letter-spacing-h6: -0.3;
+	--letter-spacing-s1: -0.2;
+	--letter-spacing-s2: -0.1;
+	--letter-spacing-b1: -0.3;
+	--letter-spacing-b2: -0.2;
+	--letter-spacing-b3: -0.1;
+	--letter-spacing-b4: -0.1;
 	--letter-spacing-c1: 0;
 	--letter-spacing-c2: 0;
 }

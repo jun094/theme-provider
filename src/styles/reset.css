@@ -1,11 +1,10 @@
 html,
 body {
 	margin: 0;
-	text-align: left;
-	color: var(--text-normal);
 	background-color: var(--background-alternative);
 }
 
-* {
+.holymoly-theme {
 	font-family: var(--font-family-sans);
+	color: var(--text-normal);
 }

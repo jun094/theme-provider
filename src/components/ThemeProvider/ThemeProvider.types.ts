@@ -11,5 +11,7 @@ export type ThemeOptions = {
 
 export type ThemeProviderProps = ThemeOptions & {
 	theme?: ThemeName;
+	appearance?: "light" | "dark";
+	className?: string;
 	children: ReactNode;
 };

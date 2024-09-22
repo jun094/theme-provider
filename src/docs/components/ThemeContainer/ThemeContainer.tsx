@@ -12,7 +12,7 @@ type ThemeContainerProps = {
 
 const ThemeContainer = ({ theme }: ThemeContainerProps) => {
 	return (
-		<ThemeProvider theme={theme}>
+		<ThemeProvider theme={theme} className={styles.provider}>
 			<div className={styles.container}>
 				<h1 className={styles.title}>테마: {theme}</h1>
 				<ThemeSection title="Button">

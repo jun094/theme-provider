@@ -71,8 +71,7 @@
 	--hint-hover: var(--gray-700);
 	--hint-active: var(--gray-800);
 }
-.holymoly-theme,
-:root {
+:is(.holymoly-theme, :root) {
 	--text-secondary: var(--gray-300);
 	--text-secondary-alternative: var(--gray-400);
 	--text-success: var(--green-700);
@@ -92,14 +91,12 @@
 	--text-exception: var(--gray-000);
 }
 
-.holymoly-theme,
-:root {
+:is(.holymoly-theme, :root) {
 	--background-normal: var(--gray-000);
 	--background-alternative: var(--gray-050);
 	--background-alternative-01: var(--gray-050);
 	--background-alternative-02: var(--gray-000);
 }
-
 .holymoly-theme {
 	--border-color: var(--gray-300);
 	--border-hover: var(--gray-400);

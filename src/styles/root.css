@@ -1,7 +1,9 @@
 @import "./reset.css";
 
 /** Semantic Token */
-@import "./primitive//primitive-color.css";
+@import "./primitive/primitive-color-light.css";
+@import "./primitive/primitive-color-dark.css";
+@import "./primitive/primitive-color.css";
 @import "./primitive/size.css";
 @import "./primitive/font.css";
 
