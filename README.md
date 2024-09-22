@@ -5,17 +5,13 @@
 최근 다양한 React 디자인 시스템 라이브러리들은 테마 관리 방식으로 **Provider 컴포넌트**를 제공한다. 이를 통해 동적인 테마 변경을 가능하게 하고, 사용자 경험을 개선할 수 있다.
 
 - Mantine UI:
-    
-    ```jsx
-    <MantineProvider theme={theme}>
-    ```
-    
+  ```jsx
+  <MantineProvider theme={theme}>
+  ```
 - Radix UI:
-    
-    ```jsx
-    <Theme accentColor="crimson" grayColor="sand" radius="large" scaling="95%">
-    ```
-    
+  ```jsx
+  <Theme accentColor="crimson" grayColor="sand" radius="large" scaling="95%">
+  ```
 
 테마 관리 방식은 크게 두 가지로 나뉜다:
 
@@ -53,29 +49,31 @@
 ### 해당방식을 지원하는 CSS 라이브러리
 
 - **Bootstrap**
-    
-    ```html
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    ```
-    
+  ```html
+  <link
+  	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  	rel="stylesheet"
+  />
+  ```
 - **Semantic UI**
-    
-    ```html
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-    ```
-    
+  ```html
+  <link
+  	rel="stylesheet"
+  	href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+  />
+  ```
 
 ## 동적 VS 정적, 선택 가이드라인
 
-| 기준 | 동적 테마 관리 (Provider 방식) | 정적 테마 관리 (CDN 방식) |
-| --- | --- | --- |
-| **실시간 테마 변경** | 가능 | 새로고침 필요 |
-| **유연성** | 높음: 다양한 테마를 동적으로 관리 가능 | 낮음: 정적 파일로 인해 동적 변경 어려움 |
-| **페이지 로딩 속도** | 초기 렌더링 지연 가능성 있음 | CDN을 통해 빠르게 로드하지만 렌더링 차단 리소스로 인해 지연 가능성 있음 |
-| **브라우저 캐싱** | 적용 없음 | 적용됨: CSS 파일을 브라우저 캐시 가능 |
-| **패키지 용량** | 상대적으로 큼: 스타일 코드가 패키지에 포함됨 | 작음: CSS 파일을 외부 CDN에서 관리 |
-| **CSS 의존성 문제** | 테마 관련 CSS와 컴포넌트가 동일한 패키지 내에서 관리됨. | CSS 파일과 컴포넌트 라이브러리 간의 일관성 유지가 어려울 수 있음 |
-| **서버 부하** | 증가할 수 있음 | 감소: CDN에서 파일 제공 |
+| 기준                 | 동적 테마 관리 (Provider 방식)                          | 정적 테마 관리 (CDN 방식)                                               |
+| -------------------- | ------------------------------------------------------- | ----------------------------------------------------------------------- |
+| **실시간 테마 변경** | 가능                                                    | 새로고침 필요                                                           |
+| **유연성**           | 높음: 다양한 테마를 동적으로 관리 가능                  | 낮음: 정적 파일로 인해 동적 변경 어려움                                 |
+| **페이지 로딩 속도** | 초기 렌더링 지연 가능성 있음                            | CDN을 통해 빠르게 로드하지만 렌더링 차단 리소스로 인해 지연 가능성 있음 |
+| **브라우저 캐싱**    | 적용 없음                                               | 적용됨: CSS 파일을 브라우저 캐시 가능                                   |
+| **패키지 용량**      | 상대적으로 큼: 스타일 코드가 패키지에 포함됨            | 작음: CSS 파일을 외부 CDN에서 관리                                      |
+| **CSS 의존성 문제**  | 테마 관련 CSS와 컴포넌트가 동일한 패키지 내에서 관리됨. | CSS 파일과 컴포넌트 라이브러리 간의 일관성 유지가 어려울 수 있음        |
+| **서버 부하**        | 증가할 수 있음                                          | 감소: CDN에서 파일 제공                                                 |
 
 ## 본인 회사의 경우
 
@@ -103,68 +101,106 @@
 - 지원함.
 - 브라우저마다 기본적으로 설정된 스타일을 제거하여 일관된 스타일을 제공하는 **reset CSS**는 필수적으로 포함돼야한다.
 - **예시**:
-    
-    ```css
-    h1, h2, h3, h4, h5, h6 {
-      margin: 0;
-      padding: 0;
-      border: 0;
-    }
-    ```
-    
+  ```css
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+  	margin: 0;
+  	padding: 0;
+  	border: 0;
+  }
+  ```
 
 ### **Component Style**
 
 - 지원하지 않음.
 - 각 컴포넌트 스타일은 디자인 시스템의 컴포넌트 패키지 내부에 정의되므로, Theme Provider에서 따로 정의하지 않는다.
 - **예시**:
-    
-    ```css
-    .button {
-      background-color: var(--color-primary);
-      padding: var(--space-500);
-      border-radius: var(--round-100);
-      font-size: var(--font-size-300);
-    }
-    ```
-    
+  ```css
+  .button {
+  	background-color: var(--color-primary);
+  	padding: var(--space-500);
+  	border-radius: var(--round-100);
+  	font-size: var(--font-size-300);
+  }
+  ```
 
 ### **Foundation Style**
 
 - 지원함
 - Foundation 요소는 재사용 가능한 디자인 토큰이며, 시스템 전반에 걸쳐 사용됩니다.
 - **지원하는 요소**:
-    - **Color**: 색상
-    - **Dimension**: 크기 (width, height)
-    - **Border-radius**: 경계선 둥글기
-    - **Typography**: 폰트 스타일 (font-size, font-family, line-height, font-weight)
-    - **Space**: 여백 (gap, padding)
+  - **Color**: 색상
+  - **Dimension**: 크기 (width, height)
+  - **Border-radius**: 경계선 둥글기
+  - **Typography**: 폰트 스타일 (font-size, font-family, line-height, font-weight)
+  - **Space**: 여백 (gap, padding)
 - 예시:
-    
-    ```css
-    :root {
-      --color-primary: #1d4ed8;
-      --color-secondary: #f97316;
-      --font-size-base: 16px;
-      --border-radius-base: 8px;
-      --space-large: 24px;
-    }
-    ```
-    
-
-## **마이그레이션 전략**
-
-1. `goormstrap-components.css`와 `goormstrap-utils.css`는 기존 그대로 유지
-    - 변경사항 거의 없을꺼임
-    - 있어도 반영해주지 않을꺼임
-2. reset style과 foundation style 은 Theme Provider로 제공
-    - 변경사항이 잦을 수 있음.
-    - 다양한 테마를 적용하는데 핵심요소들만 모아놓음
-    - 컴포넌트 라이브러리와 버전 의존성 관계 설정이 가능함.
-3. 다양한 테마 적용에 필요한 핵심 스타일만 Theme Provider에 포함, 컴포넌트와의 버전 의존성 관계를 설정
+  ```css
+  :root {
+  	--color-primary: #1d4ed8;
+  	--color-secondary: #f97316;
+  	--font-size-base: 16px;
+  	--border-radius-base: 8px;
+  	--space-large: 24px;
+  }
+  ```
 
 ## 기술 스택
 
 ### CSS 라이브러리
 
 - 클래스 유틸을 제공하지 않으므로, tailwind CSS 는 굳이 필요 없을 것 같음.
+
+### 번들러
+
+- tsup
+
+## 트러블 슈팅
+
+### border-radius
+
+테마를 커스터마이징할 수 있게 하면 가장 자주 부딪히는 문제 중 하나가 border-radius임. 각 컴포넌트가 다른 경계선 반경을 사용하지만, 이를 사용자 정의로 열어두면 관리가 복잡해짐.
+
+- AS-IS
+    - 각 컴포넌트는 다양한 border-radius를 사용하였다.
+        - 예: Button (8px, --border-radius-100), Badge (16px, --border-radius-200) 등.
+    - 그러나 컴포넌트별로 높은 border-radius와 낮은 border-radius를 사용하는 것은 고정되어 있었다.
+        - 예: Button보다 Badge가 더 둥글어야 한다.
+    - 만약 사용자가 border-radius를 커스터마이즈할 수 있게 하면, 각 컴포넌트별로 border-radius를 일일이 설정해야 한다.
+        - 예:
+            - Button에 8px (--border-radius-100)이었던 것을 16px로 변경하고 싶다.
+            - --border-radius-100을 8px에서 16px로 수정한다.
+            - --border-radius-100이 증가함에 따라 원래 16px이었던 --border-radius-200도 적절한 px로 수정해야 한다.
+            - --border-radius-200을 사용하는 Badge 컴포넌트에 적당한 px이 어울리는지 확인해야 하며, 어울리지 않으면 적당한 px을 다시 수정해야 한다.
+            - border-radius를 커스터마이즈할 때마다 매우 번거로운 작업이 필요하며, 오류가 발생할 가능성이 있다.
+- TO-BE
+    - border-radius-factor 요소를 만들어줘서, `--border-radius-*` 와 곱셈을해줌.
+        
+        ```css
+        .hm-jun {
+        	--border-radius-factor-none: 0;
+        	--border-radius-factor-sm: 0.75;
+        	--border-radius-factor-md: 1;
+        	--border-radius-factor-lg: 1.5;
+        	--border-radius-factor-full: 999;
+        }
+        
+        .hm-jun[data-hm-jun-theme="cake"] {
+        	--border-radius-100: calc(4px * var(--border-radius-factor-md));
+        	--border-radius-200: calc(8px * var(--border-radius-factor-md));
+        	--border-radius-300: calc(16px * var(--border-radius-factor-md));
+        }
+        .hm-jun[data-hm-jun-theme="strawberry"] {
+        	--border-radius-100: calc(4px * var(--border-radius-factor-full));
+        	--border-radius-200: calc(8px * var(--border-radius-factor-full));
+        	--border-radius-300: calc(16px * var(--border-radius-factor-full));
+        }
+        
+        ```
+        
+    - 사용자는  --border-radius-factor-* 5가지 옵션 중 어떤 것을 사용할지만 결정하면, 나머지는 자동으로 결정된다.
+    - 매우 빠르게 border-radius를 커스터마이즈할 수 있다.
