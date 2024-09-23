@@ -1,5 +1,1 @@
-const foo = "holymoly-jun";
-
-export function add(a: number, b: number) {
-	return a + b;
-}
+export { default as ThemeProvider } from "./components/ThemeProvider";

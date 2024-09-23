@@ -2,7 +2,16 @@
 	"name": "theme-provider",
 	"version": "0.0.0",
 	"description": "홀리몰리 Theme Provider 생성기",
-	"main": "index.js",
+	"module": "dist/esm/index.js",
+	"types": "dist/esm/index.d.ts",
+	"files": [
+		"dist/**/*"
+	],
+	"exports": {
+		".": {
+			"import": "./dist/esm/index.js"
+		}
+	},
 	"scripts": {
 		"docs:dev": "vite",
 		"docs:build": "vite build --outDir dist-docs",
