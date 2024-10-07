@@ -1,5 +1,26 @@
 main {
 	display: flex;
-	min-width: 1024px;
+	flex-direction: column;
+	min-width: 64rem /* 1024px -> 64rem */;
 	overflow-x: auto;
+}
+
+nav ul {
+	display: flex;
+	gap: 1rem;
+	padding: 1rem;
+	margin: 0;
+}
+
+nav li {
+	list-style-type: none;
+}
+
+hr {
+	border: 1px solid #e0e0e0;
+	margin: 0;
+}
+
+.page {
+	display: flex;
 }

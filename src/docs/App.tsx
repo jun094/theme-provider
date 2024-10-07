@@ -1,11 +1,23 @@
-import ThemeContainer from "./components/ThemeContainer";
+import { Outlet, Link } from "react-router-dom";
 import "./App.css";
 
 function App() {
 	return (
 		<main>
-			<ThemeContainer theme="cake" />
-			<ThemeContainer theme="strawberry" />
+			<nav>
+				<ul>
+					<li>
+						<Link to={`/`}>Home</Link>
+					</li>
+					<li>
+						<Link to={`/playground`}>Playground</Link>
+					</li>
+				</ul>
+			</nav>
+
+			<hr />
+
+			<Outlet />
 		</main>
 	);
 }
