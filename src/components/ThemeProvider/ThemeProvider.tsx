@@ -1,10 +1,11 @@
-'use client';
+"use client";
 
 import { useEffect, useRef } from "react";
 import cn from "classnames";
 
 import { ThemeProviderProps } from "./ThemeProvider.types";
 import { THEME_INFO } from "./ThemeProvider.constants";
+
 import "../../styles/root.css";
 
 const ThemeProvider = ({

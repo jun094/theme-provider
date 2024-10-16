@@ -13,4 +13,10 @@ export const THEME_INFO: Record<ThemeName, ThemeOptions> = {
 		scaling: "110",
 		typography: "gothic",
 	},
+	forest: {
+		primary: "green-500",
+		borderRadius: "lg",
+		scaling: "90",
+		typography: "pretandard",
+	},
 };

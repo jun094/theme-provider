@@ -7,7 +7,7 @@ import ThemeSection from "../ThemeSection";
 import styles from "./ThemeContainer.module.css";
 
 type ThemeContainerProps = {
-	theme: "cake" | "strawberry";
+	theme: "cake" | "strawberry" | "forest";
 };
 
 const ThemeContainer = ({ theme }: ThemeContainerProps) => {
