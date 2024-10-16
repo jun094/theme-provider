@@ -20,6 +20,17 @@
 	--text-primary: var(--pink-600);
 	--text-primary-alternative: var(--pink-700);
 }
+.holymoly-theme[data-holymoly-primary="green-500"] {
+	--primary: var(--green-500);
+	--primary-transparent-8: var(--green-500-transparent-8);
+	--primary-transparent-16: var(--green-500-transparent-16);
+	--primary-transparent-24: var(--green-500-transparent-24);
+	--primary-transparent-32: var(--green-500-transparent-32);
+	--primary-hover: var(--green-600);
+	--primary-active: var(--green-500);
+	--text-primary: var(--green-700);
+	--text-primary-alternative: var(--green-800);
+}
 
 .holymoly-theme {
 	--secondary: var(--gray-100);

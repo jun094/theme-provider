@@ -49,3 +49,21 @@
 	--dimension-700: calc(4.5rem * var(--scaling-110));
 	--dimension-800: calc(5rem * var(--scaling-110));
 }
+
+.holymoly-theme[data-holymoly-scaling="120"] {
+	--dimension-025: calc(0.375rem * var(--scaling-120));
+	--dimension-050: calc(0.5rem * var(--scaling-120));
+	--dimension-075: calc(0.75rem * var(--scaling-120));
+	--dimension-100: calc(0.875rem * var(--scaling-120));
+	--dimension-150: calc(1rem * var(--scaling-120));
+	--dimension-175: calc(1.125rem * var(--scaling-120));
+	--dimension-200: calc(1.25rem * var(--scaling-120));
+	--dimension-225: calc(1.5rem * var(--scaling-120));
+	--dimension-250: calc(2rem * var(--scaling-120));
+	--dimension-300: calc(2.5rem * var(--scaling-120));
+	--dimension-400: calc(3rem * var(--scaling-120));
+	--dimension-500: calc(3.5rem * var(--scaling-120));
+	--dimension-600: calc(4rem * var(--scaling-120));
+	--dimension-700: calc(4.5rem * var(--scaling-120));
+	--dimension-800: calc(5rem * var(--scaling-120));
+}
