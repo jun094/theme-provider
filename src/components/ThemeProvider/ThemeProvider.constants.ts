@@ -15,7 +15,7 @@ export const THEME_INFO: Record<ThemeName, ThemeOptions> = {
 	},
 	forest: {
 		primary: "green-500",
-		borderRadius: "lg",
+		borderRadius: "none",
 		scaling: "90",
 		typography: "pretandard",
 	},
